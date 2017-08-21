@@ -100,7 +100,7 @@ Grayscaling improves the training efficiency. My test on AWS shows that it takes
 ##### Augment images
 Some sign classes have very few (less than 250) samples in the training set, so I decided to generate additional data to improve accuracy.
 
-Here is an example of an original image and an augmented image:
+Here is an example of an original image and augmented images:
 
 ![Augmented Images][augmented_images]
 
