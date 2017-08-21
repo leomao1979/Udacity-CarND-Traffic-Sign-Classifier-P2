@@ -2,7 +2,7 @@
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 ## Overview
----
+
 In this project, you will use what you've learned about deep neural networks and convolutional neural networks to classify traffic signs. You will train and validate a model so it can classify traffic sign images using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). After the model is trained, you will then try out your model on images of German traffic signs that you find on the web.
 
 ---
@@ -40,7 +40,7 @@ The goals / steps of this project are the following:
 [figure_maxpooling_layer2]: ./output/featuremap_pltnum_4.png "Figure of Max Pooling Layer 2"
 
 ## Rubric Points
----
+
 ### Writeup / README
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one
@@ -94,8 +94,8 @@ Grayscaling improves the training efficiency. My test on AWS shows that it takes
 
 |                       | RGB images | Grayscale Images |
 |:---------------------:|:----------------:|:---------------:|
-|   ** Original Training Set <br>（size: 34,799）** | 105s | 77s |
-| ** Augmented Training Set <br> (size: 195,292) ** | 540s | 400s |
+| Original Training Set <br>（size: 34,799)   | 105s | 77s |
+| Augmented Training Set <br> (size: 195,292) | 540s | 400s |
 
 ##### Augment images
 Some sign classes have very few (less than 250) samples in the training set, so I decided to generate additional data to improve accuracy.
@@ -258,13 +258,17 @@ The top five soft max probabilities of sixth image (Turn right ahead) were:
 Below is the feature maps visualization for the third image, Speed Limit (30km/h).
 
 Convolutional Layer 1, 28x28x6
+
 ![Figure of Convolutional Layer 1][figure_conv_layer1]
 
 Max Pooling Layer 1, 14x14x6
+
 ![Figure of Max Pooling Layer 1][figure_maxpooling_layer1]
 
 Convolutional Layer 2, 10x10x16
+
 ![Figure of Convolutional Layer 2][figure_conv_layer2]
 
 Max Pooling Layer 2, 5x5x16
+
 ![Figure of Max Pooling Layer 2][figure_maxpooling_layer2]
